@@ -1,0 +1,47 @@
+# ----- 
+# Pattern layers.
+#
+
+# Very basic pattern to play with. See file /shader/simple.frag
+render/simple:
+  shader: simple
+
+render/perlin:
+  shader: perlin
+  
+
+
+# -----
+# Render pipeline
+#
+render/mixer:
+  shader: mixer
+  texture/src: simple
+  texture/src1: perlin
+
+render/colourize:
+  shader: colourize
+  texture/src: mixer
+  texture/palette:
+    buffer: palette 
+
+render/correct:
+  shader: correct
+  texture/src:
+    buffer: colour
+
+# -------
+# The palette is the system to control the colour scheme
+# of the system, by way of the colourize render.
+#
+# 
+render/palette:
+  shader: dissolve
+  # This will be overridden in controls.
+  texture/src:
+    buffer: paletteDefault
+
+  # Extra parameters to setup feedback loop.
+  advance: true 
+  texture/dst:
+    buffer: palette
