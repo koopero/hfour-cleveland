@@ -4,6 +4,9 @@ window:
   height: 640
   fullscreen: false
 
+show:
+  buffer: simple
+
 # Here we define white, which comes in handy.
 pixels/white:
   format: hex2

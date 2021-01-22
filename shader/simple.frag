@@ -27,7 +27,7 @@ void main()
   // individual inputs can be remixed to expressive effect.
   // 
   accum += srcCoord.x * 20.0;
-  accum += srcCoord.y * 0.1;
+  accum += srcCoord.y * 1.1;
   accum += clockTime / 5.0;
   accum += simplePhase * 4.2;
 
