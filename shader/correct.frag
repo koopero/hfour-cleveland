@@ -10,6 +10,12 @@
 // portion of the input in HSV space, then as RGB values.
 //
 //
+#include "ofxLoopin/compatible.glsl"
+#include "ofxLoopin/frag.glsl"
+#include "ofxLoopin/src.glsl"
+
+#include "lib/hsv.glsl"
+
 uniform vec4 correctRGBSmax;
 uniform vec4 correctRGBSpow;
 

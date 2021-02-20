@@ -1,0 +1,75 @@
+load:
+  - index.md
+
+meta:
+  type:
+    sliders:
+      type: group
+      hide: all
+      colour: cyan
+      sub:
+        type: float
+        hide: exact
+        direction: right
+        default: 0
+
+    clockSpeed:
+      type: float
+      title: Speed
+      colour: yellow
+      min: 0.25
+      max: 4.0
+      pow: 2
+
+    mixerMix:
+      type: float
+      colour: blue
+      path: loopin/render/mixer/float/mixerMix
+
+      
+    mixerChannel:
+      colour: blue
+      type: options
+      options: 
+        - simple
+        - perlin
+        - black
+        - white
+
+    mixerChannels:
+      type: group
+      colour: blue
+      path: loopin/render/mixer/texture
+      sub:
+        type: mixerChannel
+      subs:
+        src:
+          title: A
+        src1:
+          title: B
+
+
+    showBuffer:
+      title: Preview Buffer
+      type: options
+      path: /loopin/show/buffer
+      colour: green
+      options: 
+        - simple
+        - perlin
+        - mixer
+        - correct
+        - palette
+
+    lampsSrc:
+      type: options
+      path: /loopin/pixels/lamps/buffer
+      title: Lamps Output Source
+      colour: red
+      options:
+        - correct
+        - black
+        - white
+        - red
+        - green
+        - blue

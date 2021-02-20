@@ -1,0 +1,11 @@
+buffer/simple:
+  width: 1024
+  height: 8
+
+buffer/perlin:
+  width: 1024
+  height: 8
+
+buffer/mixer:
+  width: 1024
+  height: 8
