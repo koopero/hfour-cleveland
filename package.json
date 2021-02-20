@@ -2,5 +2,16 @@
   "dependencies": {
     "loopin-base": "^0.11.0",
     "nodemon": "^2.0.7"
+  },
+  "name": "hfour-cleveland",
+  "version": "0.1.0",
+  "description": "Cleveland Lighting Controller, algorythmic LED controller.",
+  "main": "index.js",
+  "repository": "https://github.com/koopero/hfour-cleveland.git",
+  "author": "Samm Zuest Cooper <samm@hfour.ca>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon index.js"
   }
 }
