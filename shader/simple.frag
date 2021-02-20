@@ -1,3 +1,4 @@
+precision highp float;
 // Simple Layer
 //
 // This is a trivial layer, designed to demonstrate
@@ -37,7 +38,7 @@ void main()
 
   // Using a the binary AND operator (&), we ensure that
   // `index` will always have a value between 0-3.
-  index = index & 3;
+  index = int(mod(float(index),float(4)));
 
   // Now, we use a series of `if` statements to output
   // RGB colours depending on index.
