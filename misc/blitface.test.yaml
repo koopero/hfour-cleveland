@@ -1,0 +1,9 @@
+length: 11520
+output:
+  pixelpusher:
+    address: 10.0.0.243
+    strips: 8
+    pixelsPerStrip: 480
+input:
+  rainbow:
+    length: 11520
