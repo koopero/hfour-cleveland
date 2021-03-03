@@ -2,7 +2,7 @@ window:
   title: Cleveland Lighting Controller
   width: 960
   height: 640
-  fullscreen: false
+  fullscreen: 1
 
 show:
   buffer: simple
