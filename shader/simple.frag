@@ -1,3 +1,4 @@
+precision highp float;
 // Simple Layer
 //
 // This is a trivial layer, designed to demonstrate
