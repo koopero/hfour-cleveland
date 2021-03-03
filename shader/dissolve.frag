@@ -10,5 +10,4 @@
 void main()
 {
   OUT = Texture(srcSampler, srcCoord);
-  OUT *= vertColour;
 }

@@ -11,5 +11,4 @@ uniform float hueLFO;
 void main()
 {
   OUT = Texture(srcSampler, srcCoord);
-  OUT *= vertColour;
 }
