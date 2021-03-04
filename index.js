@@ -1,7 +1,11 @@
 async function run() {
   require('loopin-base').open( __dirname )
   .then( ( loopin ) => {
-    // Your JS here.
+    const config = require('loopin-base').config( __dirname )
+    const { blitface } = config
+    if ( blitface ) {
+      require('./node/lamps')( loopin, blitface )
+    }
   } )
 }
 

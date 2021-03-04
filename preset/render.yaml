@@ -30,7 +30,11 @@ render/colourize:
 render/correct:
   shader: correct
   texture/src:
-    buffer: colour
+    buffer: mixer
+
+render/lamps:
+  shader: none
+  texture/src: correct
 
 # -------
 # The palette is the system to control the colour scheme

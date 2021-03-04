@@ -19,5 +19,5 @@ void main()
   B = pow( B, mp );
   OUT = mix( A, B, mixerMix );
   OUT = pow( OUT, 1.0/mp );
-
+  OUT.a = 1.0;
 }

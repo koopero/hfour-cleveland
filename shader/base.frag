@@ -6,5 +6,5 @@ precision highp float;
 void main()
 {
   OUT = Texture(srcSampler, srcCoord);
-  OUT *= vertColour;
+  // OUT *= vertColour;
 }

@@ -1,6 +1,7 @@
 buffer/simple:
   width: 480
   height: 8
+  format: rgba
 
 buffer/perlin:
   width: 480
@@ -9,3 +10,9 @@ buffer/perlin:
 buffer/mixer:
   width: 480
   height: 8
+
+
+buffer/lamps:
+  width: 480
+  height: 8
+  format: rgba
