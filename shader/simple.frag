@@ -55,4 +55,6 @@ void main()
     // Cyan 
     OUT.rgb = vec3( 0.0, 1.0, 1.0 );
   }
+
+  OUT.a = 1.0;
 }

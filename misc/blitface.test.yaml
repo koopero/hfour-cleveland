@@ -1,0 +1,9 @@
+length: 11520
+rate: 30
+output:
+  pixelpusher:
+    strips: 8
+    pixelsPerStrip: 480
+input:
+  rainbow:
+    length: 11520

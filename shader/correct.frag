@@ -28,11 +28,12 @@ void main()
   vec3 HSV = rgb2hsv( OUT.rgb );
 
   // Apply saturation correction.
-  HSV.y = pow( HSV.y, correctRGBSpow.a ) * correctRGBSmax.a;
+  HSV.y = pow( HSV.y, pow( 2.0, 2.0 * correctRGBSpow.a - 1.0) ) * (0.5+0.5*correctRGBSmax.a);
 
   // Back to RGB.
   OUT.rgb = hsv2rgb( HSV );
 
   // Final gamma and gain.
-  OUT.rgb = pow( OUT.rgb, correctRGBSmax.rgb ) * correctRGBSmax.rgb; 
+  OUT.rgb = pow( OUT.rgb, pow( vec3(2.0), 2.0 * correctRGBSpow.rgb - 1.0)) * (0.5+0.5*correctRGBSmax.rgb); 
+  // OUT.rgb = correctRGBSmax.rgb;
 }

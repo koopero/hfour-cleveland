@@ -32,7 +32,7 @@ sudo apt-get update && sudo apt-get install yarn
 git clone --recursive https://github.com/koopero/loopin-dev
 cd loopin-dev
 
-./scripts/yarn-link.sh
+./script/yarn-link.sh
 
 cd loopin-native
 sudo npm link
@@ -40,6 +40,7 @@ sudo npm link
 sudo loopin-native --deps
 sudo chown -R pi build
 loopin-native --verbose --test
-
-
 ```
+
+
+- loopin-native 

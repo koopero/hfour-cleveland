@@ -60,16 +60,23 @@ meta:
         - mixer
         - correct
         - palette
+        - lamps
 
     lampsSrc:
       type: options
-      path: /loopin/pixels/lamps/buffer
+      path: /loopin/render/lamps/texture/src/buffer
       title: Lamps Output Source
       colour: red
       options:
+        - mixer
         - correct
         - black
         - white
         - red
         - green
         - blue
+
+    correctVector:
+      type: vector
+      hide: path
+      channels: rgba

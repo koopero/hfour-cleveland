@@ -1,3 +1,4 @@
+precision highp float;
 #include "ofxLoopin/compatible.glsl"
 #include "ofxLoopin/frag.glsl"
 #include "ofxLoopin/src.glsl"
@@ -18,5 +19,5 @@ void main()
   B = pow( B, mp );
   OUT = mix( A, B, mixerMix );
   OUT = pow( OUT, 1.0/mp );
-
+  OUT.a = 1.0;
 }

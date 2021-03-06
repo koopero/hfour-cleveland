@@ -17,6 +17,7 @@ options:
   - mixer
   - correct
   - palette
+  - lamps
 ```
 
 ## simple
@@ -39,28 +40,22 @@ type: mixerChannels
 ``` control
 type: mixerMix
 ````
----
 
 
 ## correct
 
 ``` control
 type: correctVector
-path: loopin/uniform/vec3/correctCurve
+path: loopin/uniform/vec4/correctRGBSmax
 title: Gain
-channels: rgb
 ```
 
 ``` control
 type: correctVector
 title: Curve
-path: loopin/uniform/vec3/correctCurve
-channels: rgb
+path: loopin/uniform/vec4/correctRGBSpow
 ```
 
-```
-
-```
 
 
 ## lamps

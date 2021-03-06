@@ -1,3 +1,10 @@
+blitface:
+  output:
+    pixelpusher:
+      strips: 8
+      pixelsPerStrip: 480
+
+
 # Set verbose console logging.
 # debug/verbose: true
 
@@ -21,3 +28,5 @@ server:
     - shader
     - image
     - data
+
+
