@@ -21,6 +21,12 @@ DIY kit for controlling LED strips using a Raspberry Pi.
 - Copy `output` section into `loopin.local.yaml`.
 - Modify `preset/buffers.yaml` to reflect new geometry.
 
+## Setting up audio input device
+
+- From command line, run `loopin-native --info`
+- Observe `deviceID` from output.
+- Copy audio example from `loopin.local.example.yaml` to `loopin.local.yaml`, uncommenting and changing `deviceID`
+
 ## Setup Dev Env on Raspberry Pi 4
 
 - Run `raspi-config` and set:

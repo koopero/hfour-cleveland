@@ -24,6 +24,8 @@ meta:
     mixerMix:
       type: float
       colour: blue
+      hide: path
+      title: Mixer Mix
       path: loopin/render/mixer/float/mixerMix
 
       
@@ -33,6 +35,7 @@ meta:
       options: 
         - simple
         - perlin
+        - audio
         - black
         - white
 
@@ -40,8 +43,11 @@ meta:
       type: group
       colour: blue
       path: loopin/render/mixer/texture
+      title: Mixer Inputs
+      hide: path
       sub:
         type: mixerChannel
+        hide: path
       subs:
         src:
           title: A
@@ -54,9 +60,11 @@ meta:
       type: options
       path: /loopin/show/buffer
       colour: green
+      hide: path
       options: 
         - simple
         - perlin
+        - audio
         - mixer
         - correct
         - palette

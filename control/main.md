@@ -11,13 +11,6 @@ type: clockSpeed
 
 ``` control
 type: showBuffer
-options: 
-  - simple
-  - perlin
-  - mixer
-  - correct
-  - palette
-  - lamps
 ```
 
 ## simple
@@ -35,6 +28,37 @@ type: noiseScale
 path: loopin/render/perlin/vec4/perlinScale
 ```
 
+## audio
+
+``` control
+type: showBuffer
+options: 
+  - audio_input
+  - lamps
+```
+
+``` control
+path: loopin/waveform/audio_input
+subs:
+  enable:
+    type: toggle
+
+  gain: 
+    type: float
+    max: 200
+  
+  squelch: 
+    type: float
+
+  duration:
+    type: float
+    min: 0
+    max: 10
+    pow: 2.2
+
+  test: 
+    type: float
+```
 
 
 

@@ -12,6 +12,12 @@ render/simple:
 render/perlin:
   shader: perlin
 
+# Audio pattern layer
+render/audio:
+  shader: audio
+  texture/src:
+    buffer: audio_input
+
 # TODO: Add audio, video & image layers.
 
 # 
