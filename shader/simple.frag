@@ -27,9 +27,9 @@ void main()
   // The intention here is that the coefficients of 
   // individual inputs can be remixed to expressive effect.
   // 
-  accum += srcCoord.x * 20.0;
+  accum += srcCoord.x * 40.0;
   accum += srcCoord.y * 1.1;
-  accum += clockTime / 5.0;
+  accum += clockTime / .5;
   accum += simplePhase * 4.2;
 
   // Now, we convert this floating point value to
