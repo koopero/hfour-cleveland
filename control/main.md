@@ -29,6 +29,13 @@ subs:
   simplePhase: {}
 ```
 
+## perlin
+``` control
+type: noiseScale
+path: loopin/render/perlin/vec4/perlinScale
+```
+
+
 
 
 ## mixer

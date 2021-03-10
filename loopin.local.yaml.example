@@ -1,0 +1,10 @@
+# Copy to `loopin.local.yaml` and uncomment needed local configuration.
+
+
+# Setup for one full pixelpusher.
+
+# blitface:
+#   output:
+#     pixelpusher:
+#       strips: 8
+#       pixelsPerStrip: 480

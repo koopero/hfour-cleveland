@@ -1,21 +1,33 @@
-# hfour-cleveland
+*EXPERIMENTAL: This project remains under active development. Features and documentation are incomplete.*
 
-# Requirements
+# Cleveland Lighting Controller
 
+DIY kit for controlling LED strips using a Raspberry Pi.
 
-# Dev Environ Setup
+# Pipeline
 
-## Raspberry Pi 4
+- `mixer` : Combines layers with A-B mixer.
+  - `simple` : Customizable shader
+  - `perlin` : Simplex noise shader
+- `correct` : Correct gamma and gain
+- `lamps` : Scale output for LEDs
 
+# Instructions
 
-``` sh 
-sudo raspi-config
-```
-- 1 Set hostname to taste
-  - S5 Boot Autologin `Enable`
-- 2 D5 Enable/Disable screen blanking `No`
-- 3 P2 SSH `Yes`
+## Changing LED configuration
 
+- Modify `misc/blitface.test.yaml` section `output` with config from [blitface docs](https://www.npmjs.com/package/blitface)
+- Test LED configuration by running `blitface misc/blitface.test.yaml`.
+- Copy `output` section into `loopin.local.yaml`.
+- Modify `preset/buffers.yaml` to reflect new geometry.
+
+## Setup Dev Env on Raspberry Pi 4
+
+- Run `raspi-config` and set:
+  - `hostname` to *yourhosthanme*
+  - 2 D5 Enable/Disable screen blanking `No`
+  - 3 P2 SSH `Yes`
+- Log in to terminal with ssh.
 
 ``` sh
 # Install latest node.js
@@ -41,6 +53,3 @@ sudo loopin-native --deps
 sudo chown -R pi build
 loopin-native --verbose --test
 ```
-
-
-- loopin-native 

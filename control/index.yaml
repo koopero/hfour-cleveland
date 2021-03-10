@@ -1,5 +1,5 @@
 load:
-  - index.md
+  - main.md
 
 meta:
   type:
@@ -80,3 +80,10 @@ meta:
       type: vector
       hide: path
       channels: rgba
+
+    noiseScale:
+      type: vector
+      channels: xyz
+      title: Noise Scale
+      hide: path
+      colour: cyan

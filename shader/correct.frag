@@ -1,3 +1,4 @@
+precision highp float;
 // Correct Layer
 //
 // Apply a final colour correction.

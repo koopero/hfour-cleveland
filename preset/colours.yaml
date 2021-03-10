@@ -1,0 +1,21 @@
+# Common colours as buffers,
+# for testing purposes. 
+pixels/white:
+  format: hex2
+  data: fff
+
+pixels/black:
+  format: hex2
+  data: '000'
+
+pixels/red:
+  format: hex2
+  data: f00
+
+pixels/green:
+  format: hex2
+  data: 0f0
+
+pixels/blue:
+  format: hex2
+  data: 00f
