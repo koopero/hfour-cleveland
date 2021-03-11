@@ -56,5 +56,7 @@ void main()
     OUT.rgb = vec3( 0.0, 1.0, 1.0 );
   }
 
+  // Apply additional effects to OUT
+  OUT.b *= pow( 1.4, 0.1 * cos( clockTime ) );
   OUT.a = 1.0;
 }

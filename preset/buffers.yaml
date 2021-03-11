@@ -1,3 +1,10 @@
+# Configuration for rendering buffers.
+#
+# These should all match your LED geometry, with
+# `width` as the length of strips and
+# `height` as the number of channels.
+#
+# When you add a new layer, include it here. 
 buffer/simple:
   width: 480
   height: 8
@@ -6,11 +13,22 @@ buffer/simple:
 buffer/perlin:
   width: 480
   height: 8
+  format: rgba
 
 buffer/mixer:
   width: 480
   height: 8
+  format: rgba
 
+buffer/colourize:
+  width: 480
+  height: 8
+  format: rgba
+
+buffer/correct:
+  width: 480
+  height: 8
+  format: rgba
 
 buffer/lamps:
   width: 480

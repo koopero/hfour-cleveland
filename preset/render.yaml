@@ -1,3 +1,5 @@
+# Configuration for the main render pipeline of the application.
+
 # ----- 
 # Pattern layers.
 #
@@ -6,15 +8,20 @@
 render/simple:
   shader: simple
 
-
-
+# Flexible perlin noise.
 render/perlin:
   shader: perlin
 
+# Audio pattern layer
+render/audio:
+  shader: audio
+  texture/src:
+    buffer: audio_input
 
+# TODO: Add audio, video & image layers.
 
-# -----
-# Render pipeline
+# 
+# Linear Render pipeline
 #
 render/mixer:
   shader: mixer
@@ -32,6 +39,7 @@ render/correct:
   texture/src:
     buffer: mixer
 
+# Pick in
 render/lamps:
   shader: none
   texture/src: correct

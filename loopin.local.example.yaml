@@ -1,0 +1,17 @@
+# Copy to `loopin.local.yaml` and uncomment needed local configuration.
+
+
+# Setup for one full pixelpusher.
+# blitface:
+#   output:
+#     pixelpusher:
+#       strips: 8
+#       pixelsPerStrip: 480
+
+
+# Setup an audio input device
+# Make sure to change deviceID
+# patch:
+#   waveform:
+#     audio_input:
+#       deviceID: 3
