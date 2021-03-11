@@ -72,6 +72,10 @@ type: mixerChannels
 type: mixerMix
 ````
 
+``` control
+type: float
+path: loopin/render/mixer/float/mixerCurve
+````
 
 ## correct
 

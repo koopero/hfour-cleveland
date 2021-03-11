@@ -14,7 +14,6 @@ void main()
   
   vec4 mp = vec4( mix( 0.25, 1.75, mixerCurve ) );
 
-
   A = pow( A, mp );
   B = pow( B, mp );
   OUT = mix( A, B, mixerMix );
