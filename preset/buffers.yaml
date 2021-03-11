@@ -20,6 +20,11 @@ buffer/mixer:
   height: 8
   format: rgba
 
+buffer/audio:
+  width: 480
+  height: 8
+  format: rgba
+
 buffer/colourize:
   width: 480
   height: 8

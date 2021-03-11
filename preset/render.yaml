@@ -18,7 +18,7 @@ render/audio:
   texture/src:
     buffer: audio_input
 
-# TODO: Add audio, video & image layers.
+# TODO: Add video & image layers.
 
 # 
 # Linear Render pipeline
