@@ -1,17 +1,17 @@
 # Base setup.
 window:
   title: Cleveland Lighting Controller
-  width: 480
-  height: 240
-  fullscreen: 0
+  width: 1280
+  height: 1024
+  fullscreen: 1
   vsync: false
 
 osd:
   enable: true
 
 clock:
-  rate: 30
+  rate: 60
 
 show:
-  buffer: simple
+  buffer: lamps
 

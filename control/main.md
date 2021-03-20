@@ -91,6 +91,45 @@ title: Curve
 path: loopin/uniform/vec4/correctRGBSpow
 ```
 
+## palettes
+
+``` control
+type: showBuffer
+options: 
+  - palette
+  - palette_0
+```
+
+``` control
+path: loopin/render/palette/texture/src/buffer
+options:
+  - palette_0
+  - palette_1
+```
+
+``` control
+path: loopin/pixels/palette_0
+type: palettePixels
+title: Palette 0
+```
+
+``` control
+path: loopin/pixels/palette_1
+type: palettePixels
+title: Palette 1
+```
+
+``` control
+path: loopin/pixels/palette_2
+type: palettePixels
+title: Palette 2
+```
+
+``` control
+path: loopin/pixels/palette_3
+type: palettePixels
+title: Palette 3
+```
 
 
 ## lamps

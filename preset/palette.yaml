@@ -1,0 +1,20 @@
+# -------
+# The palette is the system to control the colour scheme
+# of the system, by way of the colourize render.
+#
+
+render/palette:
+  shader: dissolve
+  # This will be overridden in controls.
+  texture/src:
+    buffer: palette_0
+    filter: linear
+
+  # Extra parameters to setup feedback loop.
+  advance: true 
+  texture/dst:
+    buffer: palette
+
+buffer/palette:
+  width: 256
+  height: 1

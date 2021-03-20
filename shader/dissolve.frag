@@ -8,7 +8,12 @@ precision highp float;
 #include "ofxLoopin/frag.glsl"
 #include "ofxLoopin/src.glsl"
 
+uniform sampler2D dstSampler;
+
 void main()
 {
-  OUT = Texture(srcSampler, srcCoord);
+  vec4 src = Texture(srcSampler, srcCoord);
+  vec4 dst = Texture(dstSampler, srcCoord);
+
+  OUT = mix( dst, src, 0.1 );
 }

@@ -5,7 +5,6 @@ precision highp float;
 // In practice, this is where the non-linearity and
 // wierd spectrums of actual LEDs are hammered out.
 //
-// 
 //
 // First, this transformation is applied to the saturation
 // portion of the input in HSV space, then as RGB values.

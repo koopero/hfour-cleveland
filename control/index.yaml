@@ -95,3 +95,13 @@ meta:
       title: Noise Scale
       hide: path
       colour: cyan
+
+    palettePixels:
+      type: pixels
+      colour: black
+      hide: path
+      cols: 12
+      sliders: rgb hsv 
+      width: 8
+      height: 1
+      channels: rgb

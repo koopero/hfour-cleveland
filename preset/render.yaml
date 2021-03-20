@@ -37,25 +37,9 @@ render/colourize:
 render/correct:
   shader: correct
   texture/src:
-    buffer: mixer
+    buffer: colourize
 
-# Pick in
 render/lamps:
   shader: none
   texture/src: correct
 
-# -------
-# The palette is the system to control the colour scheme
-# of the system, by way of the colourize render.
-#
-# 
-render/palette:
-  shader: dissolve
-  # This will be overridden in controls.
-  texture/src:
-    buffer: paletteDefault
-
-  # Extra parameters to setup feedback loop.
-  advance: true 
-  texture/dst:
-    buffer: palette
