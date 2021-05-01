@@ -1,5 +1,12 @@
 load:
+  - docs.md
+  - types.yaml
   - main.md
+  - user.md
+  - lamps.md
+  - palette.md
+  - layers.md
+
 
 meta:
   type:
@@ -17,21 +24,23 @@ meta:
       type: float
       title: Speed
       colour: yellow
+      unit: '%'
       min: 0.25
       max: 4.0
       pow: 2
 
     mixerMix:
-      type: float
-      colour: blue
-      hide: path
+      type: vector
+      colour: cyan
       title: Mixer Mix
-      path: loopin/render/mixer/float/mixerMix
-
+      channels: xy
+      hide: path
+      path: loopin/render/mixer/vec2/mixerMix
       
     mixerChannel:
       colour: blue
       type: options
+      hide: path
       options: 
         - simple
         - perlin
@@ -39,20 +48,26 @@ meta:
         - black
         - white
 
-    mixerChannels:
-      type: group
-      colour: blue
-      path: loopin/render/mixer/texture
-      title: Mixer Inputs
-      hide: path
-      sub:
-        type: mixerChannel
-        hide: path
-      subs:
-        src:
-          title: A
-        src1:
-          title: B
+    mixerChannelA:
+      path: loopin/render/mixer/texture/src/buffer
+      type: mixerChannel
+      title: mixerA
+
+    mixerChannelB:
+      path: loopin/render/mixer/texture/src1/buffer
+      type: mixerChannel
+      title: mixerB
+
+    mixerChannelC:
+      path: loopin/render/mixer/texture/src2/buffer
+      type: mixerChannel
+      title: mixerC
+
+    mixerChannelD:
+      path: loopin/render/mixer/texture/src3/buffer
+      type: mixerChannel
+      title: mixerD
+
 
 
     showBuffer:
@@ -73,10 +88,10 @@ meta:
     lampsSrc:
       type: options
       path: /loopin/render/lamps/texture/src/buffer
-      title: Lamps Output Source
+      title: LED Output Source
+      hide: path
       colour: red
       options:
-        - mixer
         - correct
         - black
         - white
@@ -96,12 +111,3 @@ meta:
       hide: path
       colour: cyan
 
-    palettePixels:
-      type: pixels
-      colour: black
-      hide: path
-      cols: 12
-      sliders: rgb hsv 
-      width: 8
-      height: 1
-      channels: rgb

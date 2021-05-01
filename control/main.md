@@ -1,139 +1,30 @@
-# Cleveland Lighting Controller
+# Main Controls
 
-## master
-
-``` control
-path: loopin/clock/speed
-type: clockSpeed
-```
-
-## preview
 
 ``` control
 type: showBuffer
+default: lamps
 ```
 
-## simple
+The `Preview` control sets which buffer is sent to the HDMI output of the controller. The default is to show `lamps`, the main system output. 
+
+---
 
 ``` control
-type: sliders
-path: loopin/render/simple/float
-subs:
-  simplePhase: {}
+type: correctInput
 ```
 
-## perlin
+---
+
+
 ``` control
-type: noiseScale
-path: loopin/render/perlin/vec4/perlinScale
+type: mainSpeed
+default: 1
 ```
 
-## audio
-
-``` control
-type: showBuffer
-options: 
-  - audio_input
-  - lamps
-```
-
-``` control
-path: loopin/waveform/audio_input
-subs:
-  enable:
-    type: toggle
-
-  gain: 
-    type: float
-    max: 200
-  
-  squelch: 
-    type: float
-
-  duration:
-    type: float
-    min: 0
-    max: 10
-    pow: 2.2
-
-  test: 
-    type: float
-```
+Speed of all system patterns.
 
 
 
-## mixer
-
-``` control
-type: mixerChannels
-````
-
-``` control
-type: mixerMix
-````
-
-``` control
-type: float
-path: loopin/render/mixer/float/mixerCurve
-````
-
-## correct
-
-``` control
-type: correctVector
-path: loopin/uniform/vec4/correctRGBSmax
-title: Gain
-```
-
-``` control
-type: correctVector
-title: Curve
-path: loopin/uniform/vec4/correctRGBSpow
-```
-
-## palettes
-
-``` control
-type: showBuffer
-options: 
-  - palette
-  - palette_0
-```
-
-``` control
-path: loopin/render/palette/texture/src/buffer
-options:
-  - palette_0
-  - palette_1
-```
-
-``` control
-path: loopin/pixels/palette_0
-type: palettePixels
-title: Palette 0
-```
-
-``` control
-path: loopin/pixels/palette_1
-type: palettePixels
-title: Palette 1
-```
-
-``` control
-path: loopin/pixels/palette_2
-type: palettePixels
-title: Palette 2
-```
-
-``` control
-path: loopin/pixels/palette_3
-type: palettePixels
-title: Palette 3
-```
 
 
-## lamps
-
-``` control
-type: lampsSrc
-```

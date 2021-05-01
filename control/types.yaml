@@ -1,0 +1,131 @@
+meta:
+  type:
+    paletteEnable:
+      path: loopin/render/palette/texture/src/buffer
+      type: trigger
+      title: Enable Palette
+      colour: blue
+      hide: all
+
+    palettePixels:
+      type: pixels
+      colour: black
+      hide: path
+      sliders: rgb hsv 
+      width: 8
+      height: 1
+      channels: rgb
+
+    palettePixels3x3:
+      type: pixels
+      colour: black
+      hide: path
+      sliders: rgb hsv 
+      width: 3
+      height: 3
+      channels: rgb
+    
+    paletteSelect:
+      type: options
+      hide: path
+      title: paletteSelect
+      path: loopin/render/palette/texture/src/buffer
+      colour: blue
+      options:
+        - palette_0
+        - palette_1
+        - palette_2
+        - palette_3
+
+
+    correctInput:
+      type: options
+      path: loopin/render/correct/texture/src/buffer
+      hide: path
+      colour: magenta
+      title: Select Main Output
+      options: 
+        - palette
+        - mixer
+        - simple
+        - perlin
+        - audio
+        - image
+
+    layerPreview:
+      type: trigger
+      colour: green
+      hide: all
+      title: Preview Layer
+      path: loopin/show/buffer
+      
+    layerTarget:
+      type: trigger
+      colour: blue
+      hide: all
+
+    layerOutput:
+      type: trigger
+      hide: all
+      title: Output Layer
+      colour: magenta
+      path: loopin/render/correct/texture/src/buffer
+
+    layerMixerA:
+      type: layerTarget
+      title: Layer to Mixer A
+      path: loopin/render/mixer/texture/src/buffer
+
+    layerMixerB:
+      type: layerTarget
+      title: Layer to Mixer B
+      path: loopin/render/mixer/texture/src1/buffer
+      
+    layerBoilerplate:
+      type: group
+
+    mainSpeed:
+      type: clockSpeed
+      title: mainSpeed
+      hide: path
+      path: loopin/clock/speed
+
+    audioInputConfig:
+      type: group
+      path: loopin/waveform/audio_input
+      hide: path
+      title: Audio Input Config
+      colour: cyan
+      sub:
+        hide: path
+      subs:
+        enable:
+          hide: all
+          title: Enable
+          type: toggle
+
+        gain:
+          title: Gain
+          type: float
+          unit: '%'
+          max: 20
+          pow: 2
+        
+        squelch: 
+          title: Squelch
+          type: float
+          unit: '%'
+
+        duration:
+          title: Sample Duration
+          type: float
+          unit: s
+          min: 0
+          max: 10
+          pow: 2.2
+
+        test: 
+          title: Test
+          type: float
+          unit: '%'
+

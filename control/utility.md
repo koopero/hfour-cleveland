@@ -1,27 +1,4 @@
-# Show
-``` control
-path: loopin/show
-subs:
-  alpha:
-    options:
-      - ignore
-      - multiply
-      - divide
-      - show
-    
-  filter:
-    options:
-      - linear
-      - nearest
-
-  buffer:
-    # Until controls map properly, put your buffers here
-    - example
-    - output
-```
-
-
-# Window
+## Window
 
 Loopin is designed to complete own the host machine. Therefore, we can remotely
 control parameters of the application's window.

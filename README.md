@@ -59,3 +59,7 @@ sudo loopin-native --deps
 sudo chown -R pi build
 loopin-native --verbose --test
 ```
+
+# Links
+  - [Pixel Pusher](http://www.heroicrobotics.com/products/pixelpusher) LED controller
+  - [Pixel Pusher Hardware Configuration Guide](https://sites.google.com/a/heroicrobot.com/pixelpusher/home/getting-started) 
