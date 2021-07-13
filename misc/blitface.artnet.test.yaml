@@ -1,0 +1,12 @@
+# Test file to push rainbows to LEDs, through `blitface` interface.
+# To run, use command `blitface misc/blitface.artnet.test.yaml` 
+# Copy working configuration to `loopin.local.yaml`
+length: 11520
+rate: 30
+output:
+  artnet: true
+
+
+input:
+  rainbow:
+    length: 11520
